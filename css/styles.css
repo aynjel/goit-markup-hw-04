@@ -353,9 +353,10 @@ main{
 }
 
 .customers{
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 32px;
     padding: 120px 40px;
@@ -370,16 +371,16 @@ main{
 }
 
 .customers-list{
-    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 24px;
 }
 
-.customers-list .customers-list-item{
-    width: 168px;
-    height: 88px;
+.customers-list-item{
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolio{
@@ -512,7 +513,6 @@ main{
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    line-height: 0;
 }
 
 .f-logo-span {
@@ -524,6 +524,7 @@ main{
     color: var(--cloud, #F4F4FD);
     width: 264px;
     line-height: 1.2;
+    margin-top: 20px;
 }
 
 .footer-social{
@@ -537,13 +538,13 @@ main{
 .footer-social-title{
     font-size: 16px;
     color: var(--white, #FFF);
-    line-height: 0;
 }
 
 .footer-social-list{
     display: inline-flex;
     align-items: flex-start;
     gap: 16px;
+    margin-top: 20px;
 }
 
 .footer-social-list li{
