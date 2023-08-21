@@ -348,8 +348,10 @@ main{
     cursor: pointer;
 }
 
-.social-list-item a{
-    line-height: 0;
+.social-list-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .customers{
