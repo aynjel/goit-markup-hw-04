@@ -1,4 +1,14 @@
-body{
+:root {
+    --white: #ffffff;
+    --cloud: #F4F4FD;
+    --cornflower: ##E7E9FC;
+    --iris: #4D5AE5;
+    --slate: #434455;
+    --navyblue: #2E2F42;
+    --black: #000000;
+}
+
+body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
@@ -6,6 +16,7 @@ body{
 
 h1, h2, h3, h4, h5, h6{
     margin: 0;
+
     padding: 0;
     text-transform: capitalize;
 }
@@ -85,8 +96,8 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    border-bottom: 1px solid var(--cornflower, #E7E9FC);
-    background: var(--white, #FFF);
+    border-bottom: 1px solid var(--cornflower);
+    background: var(--white);
     padding: 24px 40px;
 }
 
@@ -103,7 +114,7 @@ main{
 }
 
 .nav .logo {
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -112,7 +123,7 @@ main{
     text-decoration: none;
 }
 .nav .logo-span {
-    color: var(--iris, #4D5AE5);
+    color: var(--iris);
 }
 
 .nav-list {
@@ -124,11 +135,11 @@ main{
 
 .nav-list-item a {
     font-weight: 500;
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
 }
 
 .nav-list-item a:hover {
-    color: var(--iris, #4D5AE5);
+    color: var(--iris);
 }
 
 .address {
@@ -139,11 +150,11 @@ main{
 }
 .address a {
     font-style: normal;
-    color: var(--slate, #434455);
+    color: var(--slate);
 }
 
 .address a:hover {
-    color: var(--iris, #4D5AE5);
+    color: var(--iris);
 }
 
 .section{
@@ -165,7 +176,7 @@ main{
 .title{
     font-family: "Raleway", sans-serif;
     text-align: center;
-    color: var(--white, #FFF);
+    color: var(--white);
 }
 
 .cta-btn{
@@ -174,15 +185,15 @@ main{
     padding: 16px 32px;
     text-transform: capitalize;
     border-radius: 4px;
-    color: var(--white, #FFF);
-    background: var(--iris, #4D5AE5);
+    color: var(--white);
+    background: var(--iris);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: all 0.1s ease-in-out;
 }
 
 .cta-btn:hover{
-    background: var(--cornflower, #E7E9FC);
-    color: var(--iris, #4D5AE5);
+    background: var(--cornflower);
+    color: var(--iris);
 }
 
 .cta-btn:active{
@@ -197,7 +208,7 @@ main{
 
 .about-title{
     text-align: center;
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 40px;
@@ -220,7 +231,7 @@ main{
 .about-icon{
     height: 112px;
     border-radius: 4px;
-    background: var(--cloud, #F4F4FD);
+    background: var(--cloud);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -233,12 +244,12 @@ main{
 
 .about-list-item h3{
     font-size: 22px;
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
 }
 
 .about-list-item p{
     font-size: 16px;
-    color: var(--slate, #434455);
+    color: var(--slate);
 }
 
 .services{
@@ -251,7 +262,7 @@ main{
 
 .services-title{
     text-align: center;
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 40px;
@@ -270,12 +281,12 @@ main{
     flex-direction: column;
     gap: 32px;
     padding: 120px 40px;
-    background-color: var(--cloud, #F4F4FD);
+    background-color: var(--cloud);
 }
 
 .teams-title{
     text-align: center;
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 40px;
@@ -294,8 +305,8 @@ main{
     align-items: center;
     flex-direction: column;
     gap: 32px;
-    background: var(--white, #FFF);
-    border: 1px solid var(--cornflower, #E7E9FC);
+    background: var(--white);
+    border: 1px solid var(--cornflower);
     box-shadow: 
         0px 2px 1px 0px rgba(46, 47, 66, 0.08),
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -321,12 +332,12 @@ main{
 
 .teams-list-item h3{
     font-size: 20px;
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
 }
 
 .teams-list-item p{
     font-size: 16px;
-    color: var(--slate, #434455);
+    color: var(--slate);
 }
 
 .teams-social-list{
@@ -343,7 +354,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--iris, #4D5AE5);
+    background: var(--iris);
     border-radius: 50%;
     cursor: pointer;
 }
@@ -352,6 +363,10 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.social-list-img{
+    width: 100%;
 }
 
 .customers{
@@ -365,7 +380,7 @@ main{
 
 .customers-title{
     text-align: center;
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 40px;
@@ -378,10 +393,13 @@ main{
 }
 
 .customers-list-item{
-    width: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.customer-list-img{
+    width: 100%;
 }
 
 .portfolio{
@@ -391,7 +409,7 @@ main{
 
 .portfolio-title{
     text-align: center;
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     font-size: 32px;
     font-weight: 500;
     margin-bottom: 40px;
@@ -415,18 +433,18 @@ main{
 .filter-list-item .filter-buttons{
     font-size: 16px;
     font-weight: 500;
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     padding: 12px 24px;
     border-radius: 4px;
-    color: var(--iris, #4D5AE5);
-    border: 1px solid var(--cornflower, #E7E9FC);
-    background: var(--cloud, #F4F4FD);
+    color: var(--iris);
+    border: 1px solid var(--cornflower);
+    background: var(--cloud);
     transition: all 0.3s ease-in-out;
 }
 
 .filter-list-item .filter-buttons:hover{
-    background: var(--cornflower, #E7E9FC);
-    color: var(--iris, #4D5AE5);
+    background: var(--cornflower);
+    color: var(--iris);
 }
 
 .filter-list-item .filter-buttons:active{
@@ -436,8 +454,8 @@ main{
 .filter-list-item .filter-active{
     border-radius: 4px;
     border: none;
-    background: var(--iris, #4D5AE5);
-    color: var(--white, #FFF);
+    background: var(--iris);
+    color: var(--white);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
@@ -453,7 +471,7 @@ main{
 .portfolio-list-item{
     display: flex;
     flex-direction: column;
-    background: var(--white, #FFF);
+    background: var(--white);
     width: calc(33.33% - 20px);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -473,26 +491,26 @@ main{
     flex-direction: column;
     gap: 10px;
     padding: 30px 20px;
-    border-bottom: 1px solid var(--cornflower, #E7E9FC);
-    border-left: 1px solid var(--cornflower, #E7E9FC);
-    border-right: 1px solid var(--cornflower, #E7E9FC);
+    border-bottom: 1px solid var(--cornflower);
+    border-left: 1px solid var(--cornflower);
+    border-right: 1px solid var(--cornflower);
 }
 
 .list-item-content h3{
     font-size: 20px;
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
 }
 
 .list-item-content p{
     font-size: 16px;
-    color: var(--slate, #434455);
+    color: var(--slate);
 }
 
 .footer {
     display: flex;
     align-items: flex-start;
     gap: 40px;
-    background: var(--navyblue, #2E2F42);
+    background: var(--navyblue);
     height: 312px;
     width: 100%;
     padding: 100px 40px 0;
@@ -507,7 +525,7 @@ main{
 }
 
 .f-logo {
-    color: var(--white, #FFF);
+    color: var(--white);
     font-family: "Raleway", sans-serif;
     font-size: 22px;
     font-style: normal;
@@ -517,12 +535,12 @@ main{
 }
 
 .f-logo-span {
-    color: var(--iris, #4D5AE5);
+    color: var(--iris);
 }
 
 .f-logo-text {
     font-size: 16px;
-    color: var(--cloud, #F4F4FD);
+    color: var(--cloud);
     width: 264px;
     line-height: 1.2;
     margin-top: 20px;
@@ -538,7 +556,7 @@ main{
 
 .footer-social-title{
     font-size: 16px;
-    color: var(--white, #FFF);
+    color: var(--white);
 }
 
 .footer-social-list{
@@ -548,13 +566,18 @@ main{
     margin-top: 20px;
 }
 
-.footer-social-list li{
-    width: 30px;
-    height: 30px;
+.footer-social-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 8px;
-    background: var(--iris, #4D5AE5);
+    background: var(--iris);
     border-radius: 50%;
     cursor: pointer;
+}
+
+.footer-social-list-img{
+    width: 100%;
 }
 
 li a{
