@@ -420,24 +420,26 @@ main{
 }
 
 .customers-list-item{
-    width: 100%;
-}
-
-.customer-list-img{
-    width: 100%;
-    fill: var(--lightslate);
+    width: 168px;
+    height: 88px;
     border-radius: 4px;
-    outline: 1px solid var(--lightslate);
+    border: 1px solid var(--lightslate);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.customer-list-img:hover{
-    border-radius: 4px;
+.customers-list-item:hover{
+    border: 1px solid var(--ocean);
+}
+
+.customers-list-item-img{
+    width: 100%;
+    fill: var(--lightslate);
+}
+
+.customers-list-item-img:hover{
     fill: var(--ocean);
-    border-radius: 4px;
-    outline: 1px solid var(--ocean);
 }
 
 .portfolio{
@@ -485,16 +487,14 @@ main{
     color: var(--iris);
 }
 
-.filter-list-item .filter-buttons:active{
-    transform: scale(0.95);
+.filter-list-item .filter-active{
+    background: var(--ocean);
+    color: var(--white);
 }
 
-.filter-list-item .filter-active{
-    border-radius: 4px;
-    border: none;
+.filter-list-item .filter-active:hover{
     background: var(--iris);
     color: var(--white);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .portfolio-list{
